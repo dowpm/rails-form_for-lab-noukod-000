@@ -1374,3 +1374,34 @@ Started GET "/students/new" for 190.115.180.54 at 2019-01-05 07:36:04 +0000
 Processing by StudentsController#new as HTML
   Rendered students/new.html.erb within layouts/application (32.9ms)
 Completed 200 OK in 256ms (Views: 236.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 190.115.180.54 at 2019-01-05 07:36:05 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 190.115.180.54 at 2019-01-05 07:36:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 190.115.180.54 at 2019-01-05 07:36:05 +0000
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 190.115.180.54 at 2019-01-05 07:36:05 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 190.115.180.54 at 2019-01-05 07:36:05 +0000
+
+
+Started POST "/students" for 190.115.180.54 at 2019-01-05 07:36:14 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8/bQCTCpe+eYuJDzVQRER8ICkMeimYUF6i1c9NuaVE7brX0M6wXofG4plHY4dZKFw7vHo5ClIAG8ePDY8AC0/Q==", "student"=>{"first_name"=>"Mac", "last_name"=>"Dowell"}, "commit"=>"Create Student"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  app/controllers/students_controller.rb:23:in `post_params'
+  app/controllers/students_controller.rb:8:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.8ms)
