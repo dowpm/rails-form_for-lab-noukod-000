@@ -20,7 +20,7 @@ class SchoolClassesController < ApplicationController
 
   def update
     set_school_class
-    @school_class.update params[:school_class]
+    @school_class.update post_params(:first_name, :last_name)
     redirect_to school_class_path
   end
 
