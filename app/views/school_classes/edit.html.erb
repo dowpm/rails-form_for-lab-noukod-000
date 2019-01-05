@@ -1,9 +1,7 @@
 <h3> Edit SchoolClass Form</h3>
 
-<%= form_for(@student) do |f| %>
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %><br><br>
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %><br><br>
+<%= form_for(@school_class) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %><br><br>
   <%= f.submit %>
 <% end %>
