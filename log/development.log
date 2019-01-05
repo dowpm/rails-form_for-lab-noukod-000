@@ -1437,3 +1437,18 @@ ActionController::ParameterMissing (param is missing or the value is empty: post
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.2ms)
+
+
+Started POST "/students" for 190.115.180.54 at 2019-01-05 07:37:29 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8/bQCTCpe+eYuJDzVQRER8ICkMeimYUF6i1c9NuaVE7brX0M6wXofG4plHY4dZKFw7vHo5ClIAG8ePDY8AC0/Q==", "student"=>{"first_name"=>"Mac", "last_name"=>"Dowell"}, "commit"=>"Create Student"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+RuntimeError ({"utf8"=>"✓", "authenticity_token"=>"8/bQCTCpe+eYuJDzVQRER8ICkMeimYUF6i1c9NuaVE7brX0M6wXofG4plHY4dZKFw7vHo5ClIAG8ePDY8AC0/Q==", "student"=>{"first_name"=>"Mac", "last_name"=>"Dowell"}, "commit"=>"Create Student", "controller"=>"students", "action"=>"create"}):
+  app/controllers/students_controller.rb:8:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.4ms)
