@@ -561,3 +561,6 @@ Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.4ms)
   [1m[35m (0.1ms)[0m  begin transaction
 Started GET "/school_classes/new" for 127.0.0.1 at 2019-01-05 07:52:51 +0000
 Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 333ms (Views: 312.1ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

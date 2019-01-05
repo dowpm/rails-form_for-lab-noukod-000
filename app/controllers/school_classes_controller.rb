@@ -6,7 +6,7 @@ class SchoolClassesController < ApplicationController
 
   def create
     # raise params.inspect
-    @school_class = SchoolClass.create post_params(:first_name, :last_name)
+    @school_class = SchoolClass.create post_params(:title, :room_number)
     redirect_to school_class_path(@school_class)
   end
 
