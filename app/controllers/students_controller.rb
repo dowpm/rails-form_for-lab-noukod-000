@@ -18,6 +18,12 @@ class StudentsController < ApplicationController
     set_student
   end
 
+  def update
+    set_student
+    @student.update post_params(:first_name, :last_name)
+    redirect_to student_path
+  end
+
   private
 
   def set_student
