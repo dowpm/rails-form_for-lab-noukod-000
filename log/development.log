@@ -1367,3 +1367,10 @@ rubocop \
   --auto-correct
 
 . (called from block (2 levels) in <top (required)> at /home/mc_dowp/rails-form_for-lab-noukod-000/spec/factories/students.rb:4)
+
+
+Started GET "/students/new" for 190.115.180.54 at 2019-01-05 07:36:04 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 256ms (Views: 236.0ms | ActiveRecord: 0.4ms)
